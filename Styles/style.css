@@ -1,7 +1,8 @@
 body{
     background-color: #082d53;
 }
-/* navbar styles  */
+
+/* navbar styles */
 .btn-water-glow {
     background-color: #007bff;
     border: none;
@@ -17,7 +18,6 @@ body{
 .nav-link-water {
     color: #007bff !important;
     transition: all 0.2s ease;
-    /* بنحط بوردر شفاف دايماً عشان الكلام ميهزش لما يظهر البوردر الحقيقي */
     border-bottom: 3px solid transparent !important; 
     padding-bottom: 5px;
 }
@@ -26,39 +26,31 @@ body{
     border-bottom: 3px solid #2372aa !important; 
     color: #0056b3 !important; 
 }
+/* navbar styles */
 
-
-
-
-/* navbar styles  */
-
-/* section two start  */
-/* الحالة الابتدائية للعناصر قبل الظهور */
+/* section two start */
 .reveal {
     opacity: 0;
-    transform: translateY(50px); /* نازل لتحت 50 بكسل */
+    transform: translateY(50px);
     transition: all 0.8s ease-out;
 }
 
-/* الحالة لما السكريبت يضيف كلاس النشاط */
 .reveal.active {
     opacity: 1;
-    transform: translateY(0); /* يرجع لمكانه الأصلي */
+    transform: translateY(0);
 }
-/* section two End  */
+/* section two End */
 
-/* section three start  */
-/* 1. هوفر العنوان الرئيسي (يقلب أزرق) */
+/* section three start */
 .main-title {
-    color: #212529; /* لونه العادي */
+    color: #212529;
     transition: color 0.3s ease;
 }
 
 .main-title:hover {
-    color: #007bff !important; /* يقلب أزرق بتاع بوتستراب */
+    color: #007bff !important;
 }
 
-/* 2. تنسيق الكارد الأساسي */
 .feature-card {
     background-color: #ffffff;
     transition: all 0.4s ease-in-out;
@@ -66,35 +58,32 @@ body{
 }
 
 .feature-card .title-text {
-    color: #007bff; /* العنوان في العادي أزرق */
+    color: #007bff;
 }
 
 .feature-card .body-text {
-    color: #6c757d; /* الوصف في العادي رمادي (muted) */
+    color: #6c757d;
 }
 
-/* 3. تأثير الهوفر على الكارد (خلفية زرقاء وكلام أسود) */
 .feature-card:hover {
-    background-color: #007bff !important; /* الخلفية تقلب أزرق */
-    transform: translateY(-10px); /* يترفع لفوق شوية */
+    background-color: #007bff !important;
+    transform: translateY(-10px);
 }
 
 .feature-card:hover .title-text,
 .feature-card:hover .body-text {
-    color: #000000 !important; /* الكلام كله يقلب أسود */
+    color: #000000 !important;
 }
 
-/* حركة إضافية للأيقونة */
 .feature-card:hover img {
     transform: scale(1.1);
     transition: transform 0.3s ease;
 }
 /* section three End */
 
-/* last section start  */
-/* تنسيق كارد الآراء */
+/* last section start */
 .testimonial-card {
-    border-bottom: 4px solid #007bff; /* خط أزرق من تحت بيميز المؤسسة */
+    border-bottom: 4px solid #007bff;
     transition: transform 0.3s ease;
 }
 
@@ -103,15 +92,12 @@ body{
     margin: 0 2px;
 }
 
-/* تظبيط أزرار السلايدر عشان متبقاش لازقة في الكلام */
 .carousel-control-prev, .carousel-control-next {
     width: 5%;
 }
+/* last section end */
 
-/* last section end  */
-
-/* footer start  */
-/* أنيميشن بسيط عشان الزرار ينبض */
+/* footer start */
 .btn-success.position-fixed {
     animation: pulse-animation 2s infinite;
 }
@@ -121,4 +107,19 @@ body{
     70% { box-shadow: 0 0 0 15px rgba(40, 167, 69, 0); }
     100% { box-shadow: 0 0 0 0 rgba(40, 167, 69, 0); }
 }
-/* footer end  */
+/* footer end */
+
+.neighborhood-card {
+    background-color: #e3f2fd;
+    color: #007bff;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    border: 1px solid rgba(0, 123, 255, 0.1);
+}
+
+.neighborhood-card:hover {
+    background-color: #000000 !important;
+    color: #0d6efd !important;
+    transform: translateY(-5px);
+    cursor: pointer;
+}
